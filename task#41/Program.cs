@@ -7,7 +7,8 @@
 
 Console.Clear();
 Console.Write("Введите число: ");
-int n = int.Parse(Console.ReadLine()!), positive = n, negative = 0; //, max1 = n, max2 = 0;
+int n = int.Parse(Console.ReadLine()!), positive = n;
+int countpositive = 0;
 while (n > 0) 
 {
     Console.Write("Введите число: ");
@@ -15,33 +16,9 @@ while (n > 0)
     if (positive < n)
     {
         positive = 0;
-        positive++;
+        countpositive++;
     }
-    
-    else if (negative < n)
-        positive = n;
-
-    
-      
 }
-Console.WriteLine(positive); 
+Console.WriteLine(countpositive); 
 
 
-/*
-Console.Clear();
-Console.Write("Введите число: ");
-int n = int.Parse(Console.ReadLine()!), max1 = n, max2 = 0;
-while (n != 0) 
-{
-    Console.Write("Введите число: ");
-    n = int.Parse(Console.ReadLine()!);
-    if (max1 < n)
-    {
-        max2 = max1;
-        max1 = n;
-    }
-    else if (max2 < n)
-        max2 = n;
-}
-Console.WriteLine(max2);
-*/
