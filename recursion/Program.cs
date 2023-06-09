@@ -21,3 +21,19 @@
 //                                                              XIO
 //                                                              OXI
 //                                                              IOX
+
+
+
+string[,] oil = new string[10, 10];
+
+//oil[1, 1] = "AB";
+oil[1, 1] = "BA";
+
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 1; j++)
+    {
+        Console.WriteLine($"{oil[i, j]} ");
+    }
+}
+
