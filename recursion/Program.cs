@@ -23,7 +23,6 @@
 //                                                              IOX
 
 
-
 void rec(string s2, string c)
 {
     string s1;
